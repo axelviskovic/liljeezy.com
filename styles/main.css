@@ -1,0 +1,275 @@
+body{
+  width: 100%;
+  margin:0;
+  padding:0;
+  font-family: "Niramit", "Arial", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+h1{
+  font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+}
+
+
+/* HEADER */
+
+header{
+  z-index: 20;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  opacity: .7;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+}
+
+header a{
+  color : black;
+  text-decoration: none;
+}
+
+.navMenu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navMenu li{
+  margin-top : 30px;
+  padding: 0px 30px;
+  list-style: none;
+}
+
+.navMenu li a{
+  color : black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navMenu li a:hover{
+  color : grey;
+  transition: all 0.4s;
+}
+
+/* SLIDER */
+
+.slider{
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 180px;
+}
+
+.sliderContainer{
+  position: absolute;
+  z-index: 5;
+  left : 100%;
+  transition: all 1s;
+}
+
+.slider img{
+  width: 100%;
+  height: 500px;
+}
+
+.pointsSlider{
+  top : 70%;
+  position: absolute;
+  z-index: 10;
+  transition: all 1s;
+}
+
+.pointsSlider span{
+  width : 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: white;
+  border : 1px solid black;
+  margin : 0px 10px;
+}
+
+
+/* MAIN */
+
+#buttonReturn{
+  position: fixed;
+  top : 80%;
+  left : 90%;
+  width : 70px;
+  height: 70px;
+}
+
+main{
+  padding-top: 100px;
+}
+
+
+main div{
+  width : 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.presentationBloc{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin : 0 auto;
+}
+
+#blocReseaux{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding-bottom: 50px;
+}
+
+#blocReseaux div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#blocReseaux img{
+  width : 200px;
+  height: 200px;
+}
+
+.separation{
+  margin: 20px 0px;
+  width: 80%;
+  height: .1px;
+  border : 1px solid black;
+}
+
+/* BLOC MUSIC */
+
+.newsMusiques{
+  width: 100%;
+}
+
+/* BLOC BEATS */
+
+#link{
+  color : black;
+  text-decoration: none;
+}
+
+.newsBloc{
+  padding-top: 160px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beatsList{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.beatsBloc{
+  width : 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin : 30px 0px;
+}
+
+.beatsBloc img{
+  width: 20%;
+  height: 20%;
+}
+
+.beatsContainer{
+  width : 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  border: 1px solid black;
+}
+
+.beatsComments{
+  width : 30%;
+  border: 1px solid black;
+}
+
+.beatsComments img{
+  width : 70px;
+  height: 70px;
+}
+
+
+#lecteurAudio{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTACT */
+
+#contact{
+  padding: 80px 0px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer{
+  background-color: grey;
+  width : 100%;
+  height: 100px;
+}
+
+@media screen and (min-width : 600px) and (max-width : 800px){
+
+  .slider img{
+    width: 100%;
+    height: 350px;
+  }
+
+  .pointsSlider{
+    top : 50%;
+  }
+
+  #blocReseaux img{
+    width : 140px;
+    height: 140px;
+  }
+
+  #blocReseaux h2{
+    font-size: 20px;
+  }
+
+}
+
+@media screen and (min-width : 200px) and (max-width : 600px){
+
+  #blocReseaux img{
+    width : 110px;
+    height: 110px;
+  }
+
+  #blocReseaux h2{
+    font-size: 16px;
+  }
+
+}

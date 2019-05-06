@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Lil Jeezy</title>
+    <meta name="Lil Jeezy" content="description de la page"/>
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="headerTitle"><a href="index.html" title="index">Lil Jeezy</a></h1>
+      <div></div>
+      <div class="navBar">
+        <ul class="navMenu">
+          <li><a href="pages/beats.html" title="onglet1">Beats</a></li>
+          <li><a href="pages/musiques.html" title="onglet2">Musiques</a></li>
+          <li><a href="#contact" title="onglet3"id="contactOnglet">Contact</a></li>
+      </div>
+    </header>
+    <main>
+      <a href="index.html" title="return"><img src="images/buttonReturn.png" alt="buttonReturn" id="buttonReturn"></a>
+      <div class="slider">
+        <div class="sliderContainer">
+          <img src="images/screen1.png" alt="screen1">
+          <img src="images/screen2.png" alt="screen2">
+          <img src="images/screen3.png" alt="screen3">
+        </div>
+        <div class="pointsSlider">
+          <span id="point1"></span>
+          <span id="point2"></span>
+          <span id="point3"></span>
+        </div>
+      </div>
+      <div class="presentationBloc">
+        <h1>Qui suis-je ?</h1>
+        <p>Je suis un jeune beatmaker qui réalise des instrumentales pour le plaisir, je le fais comme un passe temps mais mon but serait de pouvoir travailler avec des artistes et produire des musiques.</p>
+        <div id="blocReseaux">
+          <div class="blocReseauxYoutube">
+            <h2>Retrouvez moi sur Youtube !</h1>
+              <a href="https://www.youtube.com/channel/UC6kcqwyKQGGigFyk8e4Osuw?view_as=subscriber" title="soundcloud" target="_blank"><img src="images/youtube.png" alt="youtube"></a>
+          </div>
+          <div class="blocReseauxSoundcloud">
+            <h2>Retrouvez moi sur Soundcloud !</h1>
+            <a href="https://soundcloud.com/axel-viskovic" title="soundcloud" target="_blank"><img src="images/soundcloud.png" alt="soundcloud"></a>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <div class="newsBloc">
+      <h1>Nouveautés</h1>
+      <div class="newsBeats">
+        <h1><a href="pages/beats.html" title="beats" id="link">Beats</a></h1>
+
+        <div class="beatsBloc">
+          <img src="images/gangsta.png" alt="gangsta">
+          <div class="beatsContainer">
+              <h2>Gangsta Beat</h2>
+              <div id="lecteurAudio">
+                <audio controls="controls">
+                  <source src="audio/NathanBeat.mp3">
+                </audio>
+              </div>
+          </div>
+          <div class="beatsComments">
+            <img src="images/pouce.png" alt="pouce" class="pouce">
+            <p class="nbLike"></p>
+          </div>
+        </div>
+          <div class="beatsBloc">
+            <img src="images/boxe.png" alt="boxe">
+            <div class="beatsContainer">
+                <h2>Agressive Beat</h2>
+                <div id="lecteurAudio">
+                  <audio controls="controls">
+                    <source src="audio/AggressiveBeat.mp3">
+                  </audio>
+                </div>
+            </div>
+            <div class="beatsComments">
+              <img src="images/pouce.png" alt="pouce" class="pouce">
+              <p class="nbLike"></p>
+            </div>
+          </div>
+      </div>
+      <div class="separation"></div>
+      <div class="newsMusiques">
+        <h1><a href="pages/musiques.html" title="musiques" id="link">Musiques</a></h1>
+
+        <div class="beatsBloc">
+          <img src="images/mask.png" alt="mask">
+          <div class="beatsContainer">
+              <h2>Dark Trap</h2>
+              <div id="lecteurAudio">
+                <audio controls="controls">
+                  <source src="audio/darkBeat.mp3">
+                </audio>
+              </div>
+          </div>
+          <div class="beatsComments">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h1>Contact</h1>
+      <p>Mes instrumentales sont gratuites, du moment que vous m'identifiez en cas d'utilisation sur les réseaux. Vous pouvez me les demander par mail :</p>
+      <h2>axelviskovic@gmail.com</h2>
+    </div>
+    <footer>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
