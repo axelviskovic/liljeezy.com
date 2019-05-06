@@ -187,7 +187,6 @@ main div{
   width : 100%;
   border: 1px solid black;
   display: flex;
-  justify-content: center;
   margin : 30px 0px;
 }
 
@@ -250,6 +249,11 @@ footer{
     top : 50%;
   }
 
+  .pointsSlider span{
+    width : 15px;
+    height: 15px;
+  }
+
   #blocReseaux img{
     width : 140px;
     height: 140px;
@@ -262,6 +266,24 @@ footer{
 }
 
 @media screen and (min-width : 200px) and (max-width : 600px){
+
+  h1{
+    font-size: 28px;
+  }
+
+  .slider img{
+    width: 100%;
+    height: 250px;
+  }
+
+  .pointsSlider{
+    top : 40%;
+  }
+
+  .pointsSlider span{
+    width : 10px;
+    height: 10px;
+  }
 
   #blocReseaux img{
     width : 110px;
