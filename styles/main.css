@@ -67,6 +67,7 @@ header a{
 }
 
 .sliderContainer{
+  width : 100%;
   position: absolute;
   z-index: 5;
   left : 100%;
@@ -92,6 +93,20 @@ header a{
   background-color: white;
   border : 1px solid black;
   margin : 0px 10px;
+}
+
+.arrowSlider{
+  width : 90%;
+  z-index: 40;
+  position: absolute;
+  top :  30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrowSlider img{
+  width : 70px;
+  height: 70px;
 }
 
 
