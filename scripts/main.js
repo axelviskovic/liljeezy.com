@@ -6,9 +6,21 @@ const contactOnglet = document.querySelector("#contactOnglet")
 const onglet = document.querySelector("#contact")
 const arrowRight = document.querySelector("#arrowRight")
 const arrowLeft = document.querySelector("#arrowLeft")
+const header = document.querySelector("header")
+
 let   nbImage = 0
 let action
 setCurrent()
+
+const buttonReturn = document.querySelector("#buttonReturn")
+
+buttonReturn.addEventListener(
+  "click",
+  function(){
+    window.scroll(0,0)
+  }
+)
+
 
 // SLIDER
 
@@ -40,6 +52,7 @@ point1.addEventListener(
   function(){
       sliderContainer.style.transform="translateX(0%)"
       nbImage=0
+      window.scroll(90, 900)
       setCurrent(action)
       /*point1.classList.add("current")
       point2.classList.remove("current")
@@ -99,6 +112,31 @@ arrowLeft.addEventListener(
       nbImage=nbImage-1
       sliderContainer.style.transform="translateX("+nbImage*-100+"%)"
       setCurrent(action)
+    }
+  }
+)
+
+window.addEventListener(
+  "scroll",
+  function (){
+    const scrolled = window.scrollY
+
+    if(scrolled>130){
+      header.style.height="70px"
+      header.style.opacity=".7"
+      header.style.transition="all 1s"
+    }
+  }
+)
+window.addEventListener(
+  "scroll",
+  function (){
+    const scrolled = window.scrollY
+
+    if(scrolled<130){
+      header.style.height="100px"
+      header.style.opacity="1"
+      header.style.transition="all 1s"
     }
   }
 )
