@@ -139,7 +139,6 @@ window.addEventListener(
   "scroll",
   function (){
     const scrolled = window.scrollY
-
     if(scrolled<130){
       header.style.height="100px"
       header.style.opacity="1"
