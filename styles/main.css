@@ -139,6 +139,7 @@ main div{
 }
 
 .presentationBloc{
+  opacity : 0;
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -147,7 +148,7 @@ main div{
 }
 
 #blocReseaux{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -164,6 +165,11 @@ main div{
 #blocReseaux img{
   width : 200px;
   height: 200px;
+}
+
+#blocReseaux img:hover{
+  opacity : .7;
+  transition: all .5s;
 }
 
 .separation{
@@ -186,7 +192,13 @@ main div{
   text-decoration: none;
 }
 
+#link:hover{
+  color : grey;
+  transition : all .3s;
+}
+
 .newsBloc{
+  opacity: 0;
   padding-top: 200px;
   width: 80%;
   margin: 0 auto;
@@ -194,6 +206,7 @@ main div{
   flex-direction: column;
   align-items: center;
 }
+
 
 .beatsList{
   width: 100%;
@@ -204,15 +217,37 @@ main div{
 }
 
 .beatsBloc{
-  width : 100%;
+  width : 80%;
   border: 1px solid black;
   display: flex;
   margin : 30px 0px;
 }
 
+.imgText{
+  width : 20%;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.imgText p{
+  width : 90%;
+  height: 100%;
+  font-size: 18px;
+  opacity : 0;
+  z-index : 4;
+  color : black;
+  position : absolute;
+  transition : all 1s;
+  transform: translateX(-100%);
+}
+
 .beatsBloc img{
-  width: 20%;
-  height: 20%;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  transition : all 1s;
 }
 
 .beatsContainer{
@@ -228,18 +263,13 @@ main div{
   border: 1px solid black;
 }
 
-.beatsComments img{
-  width : 70px;
-  height: 70px;
-}
-
-
-#lecteurAudio{
+.lecteurAudio{
   width: 100%;
   height: 80%;
   display: flex;
   align-items: center;
 }
+
 .externLinkBloc{
   display: flex;
   justify-content: center;
@@ -294,6 +324,8 @@ footer{
   #blocReseaux h2{
     font-size: 20px;
   }
+
+
 
 }
 

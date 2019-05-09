@@ -7,6 +7,12 @@ const onglet = document.querySelector("#contact")
 const arrowRight = document.querySelector("#arrowRight")
 const arrowLeft = document.querySelector("#arrowLeft")
 const header = document.querySelector("header")
+const imgText = document.querySelectorAll(".imgText")
+const imgTextImg = document.querySelectorAll(".imgText img")
+const imgTextP = document.querySelectorAll(".imgText p")
+const beatsBloc = document.querySelectorAll(".beatsBloc")
+const presentationBloc = document.querySelector(".presentationBloc")
+const newsBloc = document.querySelector(".newsBloc")
 
 let   nbImage = 0
 let action
@@ -20,6 +26,7 @@ buttonReturn.addEventListener(
     window.scroll(0,0)
   }
 )
+
 
 
 // SLIDER
@@ -138,5 +145,44 @@ window.addEventListener(
       header.style.opacity="1"
       header.style.transition="all 1s"
     }
+    if(scrolled>170){
+      presentationBloc.style.opacity="1"
+      presentationBloc.style.transition="all 1s"
+    }
+    if(scrolled>170){
+      presentationBloc.style.opacity="1"
+      presentationBloc.style.transition="all 1s"
+    }
+    if(scrolled>800){
+      newsBloc.style.opacity="1"
+      newsBloc.style.transition="all 1s"
+    }
   }
 )
+
+
+
+
+// IMG TEXT function
+
+for(let i=0; i<imgText.length; i++){
+  imgText[i].addEventListener(
+    "mouseover",
+    function(){
+      imgTextImg[i].style.opacity=".3"
+      imgTextP[i].style.opacity="1"
+      imgTextP[i].style.transform="translateX(0%)"
+    }
+  )
+}
+
+for(let i=0; i<imgText.length; i++){
+  imgText[i].addEventListener(
+    "mouseout",
+    function(){
+      imgTextImg[i].style.opacity="1"
+      imgTextP[i].style.opacity="0"
+      imgTextP[i].style.transform="translateX(-100%)"
+    }
+  )
+}
