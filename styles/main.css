@@ -224,6 +224,7 @@ main div{
 }
 
 .imgText{
+  overflow: hidden;
   width : 20%;
   position: relative;
   display: flex;
