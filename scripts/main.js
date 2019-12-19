@@ -123,11 +123,12 @@ arrowLeft.addEventListener(
   }
 )
 
+
+
 window.addEventListener(
   "scroll",
   function (){
     const scrolled = window.scrollY
-
     if(scrolled>130){
       header.style.height="70px"
       header.style.opacity=".7"
@@ -158,6 +159,7 @@ window.addEventListener(
     }
   }
 )
+
 
 
 
