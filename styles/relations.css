@@ -1,0 +1,329 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+}
+
+#prenom{
+    color : #858585;
+    font-size: 30px;
+    position: absolute;
+    top : 40%;
+    left : 5%;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.flecheBack{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.flecheBack:hover{
+    left : 3px;
+}
+
+.txtEnHaut{
+    position: absolute;
+    top : 2%;
+    left : 35%;
+    font-size: 20px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.barreJaune{
+    width : auto;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    right : 0%;
+}
+
+.btnList{
+    width : 7%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    right : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLink img{
+    width : 60px;
+    height : auto;
+    margin : 10px auto;
+}
+
+#poubelle{
+    width : 50px;
+    height: auto;
+    position: absolute;
+    top : 40%;
+    left : 70%;
+    cursor: pointer;
+    opacity: .7;
+    transition : all .4s;
+}
+
+#poubelle:hover{
+    opacity: 1;
+}
+
+#voir{
+    width : 50px;
+    height : auto;
+    position: absolute;
+    top : 50%;
+    left : 70%;
+    cursor: pointer;
+    opacity: .7;
+    transition : all .4s;
+}
+
+#voir:hover{
+    opacity: 1;
+}
+
+#poubelleTxt{
+    position: absolute;
+    font-size: 15px;
+    color : #939393;
+    top : 40%;
+    left : 75%; 
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+#voirTxt{
+    position: absolute;
+    font-size: 15px;
+    color : #939393;
+    top : 50%;
+    left : 75%; 
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+/* IMAGES */
+
+.image{
+    display : none;
+    width : 600px;
+    height : auto;
+    position: absolute;
+    top : 9.8%;
+    left : 25%;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.imageDeBase{
+    width : 600px;
+    height : auto;
+    position: absolute;
+    top : 10%;
+    left : 25%;
+    z-index: 23;
+}
+
+/* DIV FANTOMES */
+
+.fantome{
+    z-index: 40;
+    width : 31px;
+    height : 31px;
+    border-radius : 100%;
+    position: absolute;
+    transition: all .4s;
+    border : 2px solid white;
+    cursor: pointer;
+}
+
+.fantome:hover{
+    border : 2px solid red;
+}
+
+.abraham{
+    top : 63%;
+    left : 63%;
+}
+
+.agnes{
+    top : 11.2%;
+    left : 39.3%;
+}
+
+.apu{
+    top : 75%;
+    left : 30%;
+}
+
+.barney{
+    top : 55.8%;
+    left : 25.4%;
+}
+
+.bart{
+    top : 41.5%;
+    left : 64%;
+}
+
+.burns{
+    top : 69%;
+    left : 28%;
+}
+
+.carl{
+    top : 28.2%;
+    left : 61.4%;
+}
+
+.inspecteur{
+    top : 13.5%;
+    left : 53.4%;
+}
+
+.dolph{
+    top : 41.5%;
+    left : 25.2%;
+}
+
+.edna{
+    top : 86%;
+    left : 39.3%;
+}
+
+.flanders{
+    top : 22.2%;
+    left : 30.1%;
+}
+
+.homer{
+    top : 17.5%;
+    left : 56.5%;
+}
+
+.jimbo{
+    top : 34.5%;
+    left : 26.4%;  
+}
+
+.kearney{
+    top : 83.6%;
+    left : 53.4%;
+}
+
+.kirk{
+    top : 17.5%;
+    left : 32.8%;
+}
+
+.krusty{
+    top : 87.5%;
+    left : 42.8%;
+}
+
+.lenny{
+    top : 48.5%;
+    left : 25%;
+}
+
+.lisa{
+    top : 62.8%;
+    left : 26.3%;
+}
+
+.lou{
+    top : 10%;
+    left : 42.8%;
+}
+
+.lovejoy{
+    top : 86.4%;
+    left : 50%;
+}
+
+.marge{
+    top : 10%;
+    left : 46.4%;
+}
+
+.martin{
+    top : 80%;
+    left : 56.4%;
+}
+
+.mel{
+    top : 69.5%;
+    left : 61.4%;
+}
+
+.milhouse{
+    top : 28.2%;
+    left : 27.9%;
+}
+
+.moe{
+    top : 87.5%;
+    left : 46.4%;
+}
+
+.nelson{
+    top : 22.7%;
+    left : 59.2%;
+}
+
+.patty{
+    top : 80%;
+    left : 32.8%; 
+}
+
+.ralph{
+    top : 56%;
+    left : 64%;
+}
+
+.selma{
+    top : 48.4%;
+    left : 64.3%;
+}
+
+.skinner{
+    top : 75.2%;
+    left : 59.3%;
+}
+
+.smithers{
+    top : 83.6%;
+    left : 35.8%;
+}
+
+.todd{
+    top : 34.6%;
+    left : 63%;
+}
+
+.wiggum{
+    top : 11.2%;
+    left : 50%;
+}
+
+.willy{
+    top : 13.6%;
+    left : 35.8%;
+}

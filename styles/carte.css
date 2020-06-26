@@ -1,0 +1,148 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+}
+
+
+.flecheBack{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.flecheBack:hover{
+    left : 3px;
+}
+
+.txtEnHaut{
+    font-size: 20px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    position: absolute;
+    top : 5%;
+    left : 30%;
+}
+
+.barreJaune{
+    width : 12%;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    right : 0%;
+}
+
+.langueContainer{
+    width : 90%;
+    position: absolute;
+    top : 12%;
+    display : none;
+    justify-content: center;
+}
+
+.langue{
+    font-size: 30px;
+    color : #535353;
+    font-family: 'theboldfont';
+    src: url('theboldfont.otf');
+}
+
+.iconesContainer{
+    width : 9%;
+    height : 90%;
+    position: absolute;
+    top : 5%;
+    right : 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#languesDoublees{
+    color : black;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.icone{
+    width : 50px;
+    height : 50px;
+    margin : 0px;
+    cursor: pointer;
+    transition : all .4s;
+}
+
+.icone:hover{
+    transform : scale(1.2);
+}
+
+.imageMap{
+    display : none;
+    position: absolute;
+    width : 60%;
+    height: auto;
+    top : 22%;
+    left : 17%;
+}
+.imageMapBase{
+    position: absolute;
+    width : 60%;
+    height: auto;
+    top : 22%;
+    left : 17%;
+}
+
+.blabla{
+    font-size: 30px;
+    position: absolute;
+    top : 80%;
+    color : #939393;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.bloblo{
+    display: none;
+    font-size: 50px;
+    position: absolute;
+    top : 80%;
+    color : #FED51B;
+    font-family: 'Raleway', sans-serif;
+}
+
+.paysChiffre{
+    left : 15%;
+}
+
+.doubleursChiffre{
+    left : 35%;
+}
+
+.chainesChiffre{
+    left : 55%;
+}
+
+.pays{
+    left : 20%;
+}
+
+.doubleurs{
+    left : 40%;
+}
+
+.chaines{
+    left : 60%;
+}

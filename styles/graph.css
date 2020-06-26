@@ -1,0 +1,212 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+}
+
+
+.flecheBack{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.flecheBack:hover{
+    left : 3px;
+}
+
+.txtEnHaut{
+    font-size: 20px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    position: absolute;
+    top : 5%;
+    left : 34%;
+}
+
+.barreJaune{
+    width : auto;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    right : 0%;
+}
+
+.btnList{
+    width : 7%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    right : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLink img{
+    width : 60px;
+    height : auto;
+    margin : 10px auto;
+}
+
+.backgroundClick{
+    position: absolute;
+    top : 0%;
+    left : 0%;
+    z-index: 1;
+    width : 90%;
+    height : 100%;
+}
+
+/* DONUT */
+
+
+.donutBleu{
+    z-index: 99;
+    width : 16%;
+    height : auto;
+    position: absolute;
+    top : 22%;
+    left : 40%;
+    cursor: pointer;
+    transition : all .4s;
+}
+
+.donutRouge{
+    z-index: 99;
+    width : 7%;
+    height : auto;
+    position: absolute;
+    top : 41%;
+    left : 41%;
+    cursor: pointer;
+    transition : all .4s;
+}
+
+.donutRose{
+    z-index: 99;
+    width : 7.7%;
+    height : auto;
+    position: absolute;
+    top : 41%;
+    left : 48.2%;
+    cursor: pointer;
+    transition : all .4s;
+}
+
+/* CATEGORIES */
+
+.adultes{
+    width : 260px;
+    height : 50px;
+    border-bottom : 1px solid #0440D8;
+    position: absolute;
+    top : 27%;
+    left : 23%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}   
+
+.vieux{
+    width : 275px;
+    height : 50px;
+    border-bottom : 1px solid #D60000;
+    position: absolute;
+    top : 43%;
+    left : 23%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.enfants{
+    width : 270px;
+    height : 50px;
+    border-bottom : 1px solid #FF3F80;
+    position: absolute;
+    top : 43%;
+    left : 54%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.chiffre{
+    color : #FED51B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+.categorie{
+    color : white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin : 10px;
+}
+
+.donutSexe{
+    display: none;
+    width : 120px;
+    height : auto;
+    position: absolute;
+    top : 70%;
+    left : 43%;
+}
+
+.chiffreSexe{
+    color : #FED51B;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.categorieSexe{
+    color : white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    margin : 10px;
+}
+
+.tauxHomme{
+    width : 160px;
+    height : 40px;
+    border-bottom : 1px solid #0440D8;
+    position: absolute;
+    top : 70%;
+    left : 34%;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tauxFemme{
+    width : 160px;
+    height : 40px;
+    border-bottom : 1px solid #FF3F80;
+    position: absolute;
+    top : 76%;
+    left : 49%;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.explication{
+    color : white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top : 90%;
+    left : 36%;
+}

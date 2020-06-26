@@ -1,0 +1,76 @@
+@font-face
+{
+    font-family: 'Simpsonfont';
+    src: url('.././font/Simpsonfont.otf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Theboldfont';
+    src: url('.././font/theboldfont.ttf') format('truetype');
+}
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('.././font/Raleway.ttf') format('truetype');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #F9BDC5;
+}
+
+img{
+    transition : all .4s;
+}
+
+img.return{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+img.return:hover{
+    left: 3px;
+}
+
+img.country-map{
+    position: absolute;
+    width : auto;
+    height : 100%;
+    animation : map-move 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes map-move{
+    from{
+      left : -100%;
+    }
+    to{
+      left : 0%;
+    }
+  }
+
+img.diffusion-page{
+    position: absolute;
+    width : auto;
+    height : 100%;
+    right : 0%;
+  }
+
+a img.country-map:hover{
+    height : 104%;
+}
+
+a img.diffusion-page:hover{
+    height : 104%;
+}

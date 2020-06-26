@@ -1,0 +1,362 @@
+@font-face
+{
+    font-family: 'Simpsonfont';
+    src: url('.././font/Simpsonfont.otf') format('opentype');
+}
+@font-face
+{
+    font-family: 'Theboldfont';
+    src: url('.././font/theboldfont.otf') format('opentype');
+}
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('.././font/Raleway.ttf') format('truetype');
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-attachment: local, scroll;
+    width: 100%;
+    height: 100%;
+    background-color: #151515;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+img.return{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+img.return:hover{
+    left : 3px;
+}
+
+h2{
+    margin: 0em;
+    margin-left: 80%;
+    padding-top: 70px;
+    font-family: 'Simpsonfont';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 96px;
+
+    color: #FED51B;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.saison-moyenne{
+    margin-left: 80%;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.saison-moyenne h4{
+    margin: 6px;
+    font-family: 'Theboldfont';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div.saison-moyenne img{
+    height: 39px;
+}
+
+img.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+div.container{
+    margin-top: 60px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.numbers h4{
+    font-family: 'Simpsonfont';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 102.44%;
+
+    color: #FED51B;
+}
+
+div.numbers div.statistics{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.numbers div.statistics div{
+    display: flex;
+    margin-right: 30px;
+    margin-left: 25px;
+}
+
+div.numbers div.statistics h3{
+    margin: 0;
+    margin-right: 15px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 102.44%;
+
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+div.numbers div.statistics h6{
+    margin: 0;
+    font-family: 'Simpsonfont';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 102.44%;
+
+    color: #939393;
+}
+
+div.numbers h5{
+    margin-top: 75px;
+    font-family: 'Simpsonfont';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 128.82%;
+
+    color: #FED51B;
+}
+
+div.graph{
+    margin-top: 60px;
+    display: flex;
+}
+
+div.graph div.legend{
+    margin-left: 25px;
+}
+
+div.graph div.legend div.notes-negatives{
+    display: flex;
+}
+
+div.graph div.legend div.notes-positives{
+    display: flex;
+    margin-top: 35px;
+}
+
+div.notes-negatives div.flex{
+    display: flex;
+    margin-right: 50px;
+}
+
+div.notes-positives div.flex{
+    display: flex;
+    margin-right: 50px;
+}
+
+div.legend div.flex p{
+    margin: 3px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 128.82%;
+
+    color: #FFFFFF;
+}
+
+div.notes-negatives div.rouge div{
+    width: 20px;
+    height: 20px;
+    background: #A60000;
+}
+
+div.notes-negatives div.orange div{
+    width: 20px;
+    height: 20px;
+    background: #FFA71D;
+}
+
+div.notes-positives div.jaune div{
+    width: 20px;
+    height: 20px;
+    background: #F2E059;
+}
+
+div.notes-positives div.vert div{
+    width: 20px;
+    height: 20px;
+    background: #90CC5F;
+}
+
+div.bars{
+    margin-top: 30px;
+    position: relative;
+}
+
+div.bars p{
+    position: absolute;
+    top: -150px;
+    left: 250px;
+    width: 200px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 128.82%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+
+    color: #FFFFFF;
+}
+
+div.bars p span{
+    font-family: 'Simpsonfont';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 102.44%;
+
+    color: #939393;
+}
+
+div.bars div{
+    position: absolute;
+    height: 20px;
+    width: 600px;
+    transform-origin: 0% 50%;
+}
+
+div.greenbar{
+    background: #90CC5F;
+}
+
+div.greenbar+p{
+    color:#90CC5F;
+}
+
+div.greenbar:hover+p{
+    opacity: 1;
+}
+
+div.yellowbar{
+    background: #F2E059;
+}
+
+div.yellowbar+p{
+    color:#F2E059;
+}
+
+div.yellowbar:hover+p{
+    opacity: 1;
+}
+
+div.orangebar{
+    background: #FFA71D;
+}
+
+div.orangebar+p{
+    color:#FFA71D;
+}
+
+div.orangebar:hover+p{
+    opacity: 1;
+}
+
+div.redbar{
+    background: #A60000;
+}
+
+div.redbar+p{
+    color:#A60000;
+}
+
+div.redbar:hover+p{
+    opacity: 1;
+}
+
+div.fact{
+    width: 426px;
+    height: 599px;
+    margin-top: 32px;
+    background: #1D1D1D;
+    box-shadow: inset 0px 3.9975px 9.99376px rgba(0, 0, 0, 0.85);
+}
+
+div.fact h4{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-family: 'Simpsonfont';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 102.44%;
+    text-align: center;
+
+    color: #FED51B;
+}
+
+div.fact h5{
+    margin: 0;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 102.44%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+div.fact h6{
+    margin: 0;
+    margin-top: 20px;
+    padding: 0 20px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 102.44%;
+    text-align: center;
+
+    color: #A2A2A2;
+}
+
+div.fact h3{
+    margin-top: 60px;
+    font-family: 'Theboldfont';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 102.44%;
+    text-align: center;
+
+    color: #535353;
+}

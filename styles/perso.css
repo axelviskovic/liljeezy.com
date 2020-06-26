@@ -1,0 +1,299 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+}
+
+
+.flecheBack{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.flecheBack:hover{
+    left : 3px;
+}
+
+.txtEnHaut{
+    font-size: 20px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    position: absolute;
+    top : 10%;
+    left : 1%;
+}
+
+.barreJaune{
+    width : auto;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    right : 0%;
+}
+
+.btnList{
+    width : 7%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    right : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLink img{
+    width : 60px;
+    height : auto;
+    margin : 10px auto;
+}
+
+.persoBulleContainer{
+    width : 300px;
+    height : 300px;
+    position: absolute;
+}
+
+.bubulle{
+    position: absolute;
+    width : 200px;
+    height: auto;
+    z-index: 60;
+}
+
+.persoContainer{
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    border : 2px solid #FED51B;
+    opacity: .1;
+    transition : all .4s;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.persoContainer:hover{
+    opacity: 1;
+}
+
+.bulleContainer{
+    width : 250px;
+    height : 100px;
+    position: absolute;
+    display : none;
+    z-index: 100;
+}
+
+.persoBulle{
+    width : 100%;
+    height : auto;
+    position: absolute;
+    top : -20%;
+}
+
+.txtBubble{
+    position: absolute;
+    top : 15%;
+    right : 25%;
+    width : 130px;
+    font-size: 17px;
+    z-index: 101;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.red{
+    color : #E80707;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.grey{
+    color : #7B7B7B;
+    font-size: 20px;
+}
+
+.backgroundClick{
+    position: absolute;
+    top : 0%;
+    left : 0%;
+    z-index: 1;
+    width : 90%;
+    height : 100%;
+}
+
+/* DIV PERSO */
+
+#bulle0{
+    display : none;
+}
+
+#bulle1{
+    left : 40%;
+    top : 40%;
+}
+#bulle2{
+    left : 30%;
+    top : 20%;
+}
+#bulle3{
+    left : 42%;
+    top : 5%;
+}
+
+#bulle4{
+    left : 30%;
+    top : 60%;
+}
+#bulle5{
+    left : 60%;
+    top : 30%;
+}
+
+#bulle5 .persoBulle{
+    position: absolute;
+    top : -50%;
+}
+
+#bulle6{
+    left : 20%;
+    top : 40%;
+}
+#bulle7{
+    left : 20%;
+    top : 70%;
+}
+#bulle8{
+    left : 40%;
+    top : 80%;
+}
+#bulle9{
+    left : 20%;
+    top : 20%;
+}
+#bulle10{
+    left : 50%;
+    top : 70%;
+}
+#bulle11{
+    left : 55%;
+    top : 55%;
+}
+#bulle12{
+    left : 52%;
+    top : 30%;
+}
+#bulle13{
+    left : 15%;
+    top : 60%;
+}
+#bulle14{
+    left : 60%;
+    top : 20%;
+}
+#bulle15{
+    left : 46%;
+    top : 31%;
+}
+#bulle16{
+    left : 35%;
+    top : 50%;
+}
+#bulle17{
+    left : 55%;
+    top : 47%;
+}
+#bulle18{
+    left : 25%;
+    top : 65%;
+}
+
+/* BUBULLE */
+
+.bubble1{
+    left : 47%;
+    top : 25%;
+}
+.bubble2{
+    left : 37%;
+    top : 10%;
+}
+.bubble3{
+    left : 47%;
+    top : 0%;
+}
+
+.bubble4{
+    left : 35%;
+    top : 50%;
+}
+.bubble5{
+    left : 65%;
+    top : 17%;
+}
+.bubble6{
+    left : 25%;
+    top : 27%;
+}
+.bubble7{
+    left : 25%;
+    top : 57%;
+}
+.bubble8{
+    left : 46%;
+    top : 67%;
+}
+.bubble9{
+    left : 25%;
+    top : 7%;
+}
+.bubble10{
+    left : 54%;
+    top : 55%;
+}
+.bubble11{
+    left : 58%;
+    top : 39%;
+}
+.bubble12{
+    left : 55%;
+    top : 15%;
+}
+.bubble13{
+    left : 17%;
+    top : 42%;
+}
+.bubble14{
+    left : 62%;
+    top : 0%;
+}
+.bubble15{
+    opacity: 1;
+    left : 47%;
+    top : 10%;
+}
+.bubble16{
+    left : 35%;
+    top : 30%;
+}
+.bubble17{
+    left : 55%;
+    top : 25%;
+}
+.bubble18{
+    left : 25%;
+    top : 43%;
+}
+

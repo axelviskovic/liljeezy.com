@@ -1,0 +1,469 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+    background-color: #161616;
+    position: relative;
+}
+
+.flecheBack{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.flecheBack:hover{
+    left : 3px;
+}
+
+.txtEnHaut{
+    position: absolute;
+    top : 2%;
+    left : 31%;
+    font-size: 20px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.barreJaune{
+    width : auto;
+    height : 100%;
+    position: absolute;
+    top : 0%;
+    right : 0%;
+}
+
+.btnList{
+    width : 7%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    right : 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnLink img{
+    width : 60px;
+    height : auto;
+    margin : 10px auto;
+}
+
+/* LIEUX */
+
+.lieuStat{
+    opacity: 0;
+}
+
+.lieuxContainer{
+        width : 70%;
+        height : 72%;
+        background-color: #151515;
+        border : 1px solid white;
+        position: absolute;
+        top : 10%;
+        left : 15%;
+}
+
+.imgLieu{
+    width : 100%;
+    height : auto;
+}
+
+.imgLieuHaute{
+    height: 100%;
+    width : auto;
+}
+
+.lieu{
+    position: absolute;
+    overflow: hidden;
+}
+
+.lieu8{
+    width :30%;
+    height: 33%;
+    top : 0%;
+    left : 0%;
+}
+
+.lieu6{
+    width :30%;
+    height: 33%;
+    top : 33%;
+    left : 0%; 
+}
+
+.lieu15{
+    width :30%;
+    height: 34%;
+    top : 66%;
+    left : 0%; 
+}
+
+.lieu16{
+    width :20%;
+    height: 40%;
+    top : 0%;
+    left : 30%; 
+}
+
+.lieu9{
+    width :20%;
+    height: 30%;
+    top : 40%;
+    left : 30%; 
+}
+
+.lieu18{
+    width :20%;
+    height: 20%;
+    top : 60%;
+    left : 30%; 
+}
+
+.lieu17{
+    width :20%;
+    height: 20%;
+    top : 80%;
+    left : 30%; 
+}
+
+.lieu23{
+    width :20%;
+    height: 40%;
+    top : 0%;
+    left : 50%; 
+}
+
+.lieu7{
+    width :20%;
+    height: 20%;
+    top : 40%;
+    left : 50%; 
+}
+
+.lieu13{
+    width :20%;
+    height: 20%;
+    top : 60%;
+    left : 50%; 
+}
+
+.lieu5{
+    width :20%;
+    height: 20%;
+    top : 80%;
+    left : 50%; 
+}
+
+.lieu11{
+    width :15%;
+    height: 40%;
+    top : 0%;
+    left : 70%; 
+}
+
+.lieu12{
+    width :15%;
+    height: 20%;
+    top : 40%;
+    left : 70%; 
+}
+
+.lieu20{
+    width :15%;
+    height: 20%;
+    top : 60%;
+    left : 70%; 
+}
+
+.lieu24{
+    width :15%;
+    height: 10%;
+    top : 80%;
+    left : 70%; 
+}
+
+.lieu14{
+    width :15%;
+    height: 10%;
+    top : 90%;
+    left : 70%; 
+}
+
+.lieu25{
+    width :15%;
+    height: 40%;
+    top : 0%;
+    left : 85%; 
+}
+
+.lieu4{
+    width :15%;
+    height: 20%;
+    top : 40%;
+    left : 85%; 
+}
+
+.lieu22{
+    width :15%;
+    height: 20%;
+    top : 60%;
+    left : 85%; 
+}
+
+.lieu19{
+    width :7.5%;
+    height: 20%;
+    top : 80%;
+    left : 85%; 
+}
+
+.lieu21{
+    width :7.5%;
+    height: 20%;
+    top : 80%;
+    left : 92.5%; 
+}
+
+/* BLACK */
+
+.black{
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    transition : all .2s;
+}
+
+.black8{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    top : 0%;
+    left : 0%;
+}
+
+.black6{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    top : 33%;
+    left : 0%; 
+}
+
+.black15{
+    width :30%;
+    height: 33%;
+    position: absolute;
+    top : 66%;
+    left : 0%; 
+}
+
+.black16{
+    width :20%;
+    height: 40%;
+    position: absolute;
+    top : 0%;
+    left : 30%; 
+}
+
+.black9{
+    width :20%;
+    height: 20%;
+    position: absolute;
+    top : 40%;
+    left : 30%; 
+}
+
+.black18{
+    width :20%;
+    height: 20%;
+    top : 60%;
+    left : 30%; 
+}
+
+.black17{
+    width :20%;
+    height: 20%;
+    top : 80%;
+    left : 30%; 
+}
+
+.black23{
+    width :20%;
+    height: 40%;
+    top : 0%;
+    left : 50%; 
+}
+
+.black7{
+    width :20%;
+    height: 20%;
+    top : 40%;
+    left : 50%; 
+}
+
+.black13{
+    width :20%;
+    height: 20%;
+    top : 60%;
+    left : 50%; 
+}
+
+.black5{
+    width :20%;
+    height: 20%;
+    top : 80%;
+    left : 50%; 
+}
+
+.black11{
+    width :15%;
+    height: 40%;
+    top : 0%;
+    left : 70%; 
+}
+
+.black12{
+    width :15%;
+    height: 20%;
+    top : 40%;
+    left : 70%; 
+}
+
+.black20{
+    width :15%;
+    height: 20%;
+    top : 60%;
+    left : 70%; 
+}
+
+.black24{
+    width :15%;
+    height: 10%;
+    top : 80%;
+    left : 70%; 
+}
+
+.black14{
+    width :15%;
+    height: 10%;
+    top : 90%;
+    left : 70%; 
+}
+
+.black25{
+    width :15%;
+    height: 40%;
+    top : 0%;
+    left : 85%; 
+}
+
+.black4{
+    width :15%;
+    height: 20%;
+    top : 40%;
+    left : 85%; 
+}
+
+.black22{
+    width :15%;
+    height: 20%;
+    top : 60%;
+    left : 85%; 
+}
+
+.black19{
+    width :7.5%;
+    height: 20%;
+    top : 80%;
+    left : 85%; 
+}
+
+.black21{
+    width :7.5%;
+    height: 20%;
+    top : 80%;
+    left : 92.5%; 
+}
+
+/* STATS */
+
+.statContainer{
+    width : 70%;
+    height : 13%;
+    position: absolute;
+    bottom : 0;
+    left : 15%;
+    border : 1px solid white;
+    background-color: #151515;
+}
+
+.imgStat{
+    position: absolute;
+    left : 0%;
+    top : 0%;
+    width : 25%;
+    height : 100%;
+    margin : 0;
+    overflow: hidden;
+}
+
+.txtStat{
+    font-size: 25px;
+    position: absolute;
+    top : 10%;
+    left : 30%;
+    color : #FED51B;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.apparition{
+    color : white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top : 30%;
+    left : 55%;
+}
+
+.apparitionTxt{
+    color : #939393;
+    font-size: 20px;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    position: absolute;
+    top : 20%;
+    left : 60%;
+}
+
+.taux{
+    color : white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top : 30%;
+    left : 75%;  
+}
+
+.tauxTxt{
+    color : #939393;
+    font-size: 20px;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    position: absolute;
+    top : 20%;
+    left : 80%;
+}

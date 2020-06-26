@@ -1,0 +1,407 @@
+body{
+    margin : 0;
+    padding : 0;
+    width : 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#backgroundImg{
+    width : 100%;
+    height: 100%;
+}
+
+/* FORMULAIRE */
+
+.formAnecdoteContainer{
+    display : none;
+    position: absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    z-index: 999;
+}
+
+.black{
+    position: absolute;
+    width : 100%;
+    height : 100%;
+    opacity: .7;
+    background-color: black;
+}
+
+.formAnecdote{
+    position: absolute;
+    top : 25%;
+    left : 25%;
+    width : 50%;
+    height : 400px;
+    background-color: #3D3D3D;
+    border-radius: 15px;
+    border : none;
+}
+
+#anecdoteFieldset{
+    border : none;
+}
+
+#fieldsetTxt{
+    color : #FED51B;
+    text-align: center;
+    font-size : 24px;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#anecdote{
+    font-family: 'Raleway', sans-serif;
+    display : block;
+    margin : 30px auto;
+    width : 500px;
+    height : 150px;
+    border-radius : 8px;
+}
+
+#idPersoInput{
+    visibility:hidden;
+}
+
+#submitBtn{
+    display : block;
+    margin : 0 auto;
+    width : 300px;
+    height : 50px;
+    background-color: #FED51B;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+
+.flecheBack{
+    width : 80px;
+    height: auto;
+    position: absolute;
+    top : 10px;
+    left : 10px;
+    transition : all .4s ease;
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  .flecheBack:hover{
+    left : 3px;
+  }
+
+.persoContainer{
+    width : 33%;
+    height : 100%;
+    position: absolute;
+    top : 0;
+    left : 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.persoContainer{
+    font-size: 20px;
+    color : #FED51B;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+}
+
+.imgPerso{
+    width : 70%;
+    height: auto;
+}
+
+.blackContainer{
+    width : 33%;
+    height : 100%;
+    background-color: black;
+    opacity: .7;
+    position: absolute;
+    top : 0;
+    left : 0;
+    z-index: 1;
+}
+
+
+/* ANECDOTES  */
+
+
+.anecdotesContainer{
+    opacity: .97;
+    width : 30%;
+    height : 100%;
+    background-color: #101010;
+    position: absolute;
+    top : 0;
+    left : 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentationContainer{
+    width : 100%;
+    height : 200px;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomPersoAnecdotes{
+    font-size: 24px;
+    color : white;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    text-align: center;
+    margin : 0 20%;
+}
+
+.agePersoAnecdotes{
+    font-size: 24px;
+    color :#535353;
+    font-family: 'Simpsonfont'; 
+    src: url('theboldfont.otf');
+    text-align: center;
+}
+
+.separation{
+    width : 80%;
+    height : 2px;
+    background-color :#535353;
+    margin : 0 auto;
+}
+
+.titreSavoirPlus{
+    font-size: 24px;
+    color :#FED51B;
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    margin : 0 20%;
+}
+
+.anecdotesList{
+    width : 100%;
+    height : 50%;
+    overflow-y: scroll;
+}
+
+.anecdote{
+    background-color: #272727;
+    width : 80%;
+    height : auto;
+    margin : 10px auto 10px auto;
+    padding : 8px 0 8px 0;
+    border-radius : 15px;
+}
+
+.txtAnecdote{
+    color : white;
+    margin : 0 20%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btnAddAnecdote{
+    width : 30px;
+    height: auto;
+    margin-right : 15px;
+}
+
+.addAnecdote{
+    text-decoration: none;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* STATISTIQUES  */
+
+
+.statsContainer{
+    opacity: .97;
+    width : 37%;
+    height : 100%;
+    background-color: #222222;
+    position: absolute;
+    top : 0;
+    right :0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.year{
+    font-size: 50px;
+    color : white;
+    font-family: 'Raleway', sans-serif;
+    margin : 0;
+}
+
+.premiere{
+    font-size:  20px;
+    color :#FED51B;
+    font-family: 'theboldfont'; 
+    src: url('theboldfont.otf');
+}
+
+.apparition{
+    font-size:  15px;
+    color :white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.personnaliteContainer{
+    width : 100%;
+    height: 40%;
+}
+
+
+.personnalite{
+    font-size: 25px;
+    color : white;
+    width : 35%;
+    height : 40px;
+    text-align: center;
+    margin : 20px auto 0px auto;
+    border-bottom : 2px solid #535353;
+    font-family: 'theboldfont'; 
+    src: url('theboldfont.otf');
+}
+
+.sentimentContainer{
+    width : 100%;
+    height : 80%;
+    position: relative;
+}
+
+.negatif{
+    width : 150px;
+    height : 40px;
+    position: absolute;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    top : 10%;
+    left : 10%;
+    border-bottom : 2px solid #C00000;
+}
+
+.positif{
+    width : 140px;
+    height : 40px;
+    position: absolute;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    bottom : 0%;
+    right : 10%;
+    border-bottom : 2px solid #2100EB;
+}
+
+.sentimentsTxt{
+    font-size : 14px;
+    color : white;
+    font-family: 'Raleway', sans-serif;
+    margin-left : 10px;
+}
+
+.percent{
+    color : #FED51B;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.blueBar{
+    width : 60%;
+    height : 15px;
+    position: absolute;
+    top : 50%;
+    left : 23%;
+    background-color: #2100EB;
+}
+
+.redBar{
+    height : 15px;
+    position: absolute;
+    top : 50%;
+    left : 23%;
+    background-color: #C00000;
+}
+
+.apparitionContainer{
+    width : 100%;
+    height: 40%;
+    position: relative;
+}
+
+.simpsonFont{
+    font-family: 'Simpsonfont'; 
+    src: url('Simpsonfont.otf');
+    position: absolute;
+    color : white;
+    font-size: 20px;
+}
+
+#apparuDans{
+    top : 30%;
+    left : 20%; 
+}
+
+#nbEpisode{
+    color : #FED51B;
+    font-size: 35px;
+    position: absolute;
+    top : 35%;
+    left : 45%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#episodes{
+    top : 40%;
+    left : 63%;
+}
+
+#classementBavard{
+    color : #7B7B7B;
+    font-size: 25px;
+    top : 58%;
+    left : 16%;
+}
+
+#persoBavard{
+    font-size: 16px;
+    width : 150px;
+    top : 63%;
+    left : 20%;
+    text-align: right;
+}
+
+#totalMots{
+    color : #78E477;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top : 65%;
+    left : 50%;
+}
+
+#mots{
+    top : 70%;
+    left : 70%;
+}
